@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="https://extranet.lopesrio.com.br/assets/img/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lopes Labs</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="https://extranet.lopesrio.com.br/assets/img/logo.svg" id="user_avatar" alt="Avatar">
+                <p id="user_infos">
+                    <span class="item-descrition">
+                        Lopes
+                    </span>
+                    <span class="item-descrition">
+                        Financeiro
+                    </span>
+                </p>
+            </div>
+            
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-descrition">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span class="item-descrition">
+                            Contas a Pagar
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-descrition">
+                            Notificações
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-descrition">
+                            Produtos
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-image"></i>
+                        <span class="item-descrition">
+                            Imagens
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-descrition">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-descrition">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">           
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Adicionar conta</h1>
+                        </div>
+
+                        <div class="sub-title">
+                            <h2>1900</h2>
+                        </div>
+                    </div>
+
+                    <div id="budgeted-inputs">
+                        <div id="budgeted"></div>
+                    </div>
+
+                    <div class="input-group">
+
+                        <div class="input-box-row">
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Empresa de Origem</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Orçado / Realizado</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">DRE</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="input-box-row">
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Área Orçamento</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Centro de Custo</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Tipo de despesa</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-group mt">
+
+                        <div class="input-box-row">
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Fornecedor</label>
+                                    <a href="provider.html" target="_blank"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Lopes Península</option>
+                                    <option value="2">Lopes Leblon</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="money">Valor</label>
+                                </div>
+                                
+                                <input class="input-text" type="text" placeholder="R$ 0.00,00">
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="due-date">Data de Vencimento</label>
+                                </div>
+                                <input class="input-date" type="date" name="due-date">
+                            </div>
+                        </div>
+
+                        <div class="input-box-row">
+    
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="company">Descrição</label>
+                                </div>
+                                
+                                <input class="input-text" type="text" placeholder="Digite...">
+                            </div>
+    
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="money">Banco</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                </div>
+                                <select name="company" id="company">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Itaú</option>
+                                    <option value="2">Santander</option>
+                                </select>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="description">Descrição</label>
+                                </div>
+                                
+                                <input class="input-text" type="text" placeholder="Digite...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="types-inputs">
+                        <div class="types-title">
+                            <h6>Tipo</h6>
+                        </div>
+    
+                        <div class="types-group">
+                            <div class="types-input">
+                                <input type="radio" id="budgeted" checked="checked">
+                                <label for="budgeted">Orçado</label>
+                            </div>
+    
+                            <div class="types-input">
+                                <input type="radio" id="realized">
+                                <label for="realized">Realizado</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+        </div>
+    </main>
+
+    <script src="./src/javascript/script.js"></script>
+</body>
+</html>
