@@ -47,9 +47,9 @@
     
                 <li class="side-item">
                     <a href="#">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bars-staggered"></i>
                         <span class="item-descrition">
-                            Notificações
+                            Fluxo
                         </span>
                     </a>
                 </li>
@@ -58,16 +58,7 @@
                     <a href="#">
                         <i class="fa-solid fa-box"></i>
                         <span class="item-descrition">
-                            Produtos
-                        </span>
-                    </a>
-                </li>
-    
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-image"></i>
-                        <span class="item-descrition">
-                            Imagens
+                            Cadastro
                         </span>
                     </a>
                 </li>
@@ -111,10 +102,6 @@
                         </div>
                     </div>
 
-                    <div id="budgeted-inputs">
-                        <div id="budgeted"></div>
-                    </div>
-
                     <div class="input-group">
 
                         <div class="input-box-row">
@@ -132,25 +119,25 @@
 
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Orçado / Realizado</label>
+                                    <label for="dre">DRE</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="dre" id="dre">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Administração de Imóveis</option>
+                                    <option value="2">Despesas Totais</option>
                                 </select>
                             </div>
 
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">DRE</label>
+                                    <label for="cost-center">Centro de Custo</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="cost-center" id="cost-center">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Administrativo</option>
+                                    <option value="2">Vendas</option>
                                 </select>
                             </div>
 
@@ -159,37 +146,38 @@
                         <div class="input-box-row">
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Área Orçamento</label>
+                                    <label for="budget-area">Área Orçamento</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="budget-area" id="budget-area">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Atendimento</option>
+                                    <option value="2">Desenvolvimento</option>
                                 </select>
                             </div>
 
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Centro de Custo</label>
+                                    <label for="account-name">Denominação da Conta</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="account-name" id="account-name">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Ações de vendas</option>
+                                    <option value="2">Convenções</option>
                                 </select>
                             </div>
 
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Tipo de despesa</label>
+                                    <label for="type-cost">Tipo de despesa</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="type-cost" id="type-cost">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Fixa</option>
+                                    <option value="2">Variável</option>
+                                    <option value="3">Dedução de receita</option>
                                 </select>
                             </div>
 
@@ -202,13 +190,13 @@
                         <div class="input-box-row">
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Fornecedor</label>
+                                    <label for="provider">Fornecedor</label>
                                     <a href="provider.html" target="_blank"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="provider" id="provider">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
+                                    <option value="1">Dell Technologies</option>
+                                    <option value="2">Papelex</option>
                                 </select>
                             </div>
 
@@ -232,21 +220,25 @@
     
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Descrição</label>
+                                    <label for="bank">Banco</label>
+                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                
-                                <input class="input-text" type="text" placeholder="Digite...">
+                                <select name="bank" id="bank">
+                                    <option selected="selected" value="0">Selecione</option>
+                                    <option value="1">Itaú</option>
+                                    <option value="2">Santander</option>
+                                </select>
                             </div>
     
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="money">Banco</label>
+                                    <label for="payment">Forma de Pagamento</label>
                                     <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="company" id="company">
+                                <select name="payment" id="payment">
                                     <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Itaú</option>
-                                    <option value="2">Santander</option>
+                                    <option value="1">Boleto</option>
+                                    <option value="2">Cheque</option>
                                 </select>
                             </div>
 
@@ -278,6 +270,9 @@
                         </div>
                     </div>
 
+                    <div class="salve-button">
+                        <button><a href="#">Salvar</a></button>
+                    </div>
                 </form>
         </div>
     </main>
