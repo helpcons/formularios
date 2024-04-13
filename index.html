@@ -102,6 +102,12 @@
                         </div>
                     </div>
 
+                    <div class="form-menu">
+                        <h3>Dados</h3>
+                        <h3>Rateio</h3>
+                        <h3>Observações</h3>
+                    </div>
+
                     <div class="input-group">
 
                         <div class="input-box-row">
@@ -159,7 +165,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="account-name">Denominação da Conta</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-account-name" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="account-name" id="account-name">
                                     <option selected="selected" value="0">Selecione</option>
@@ -171,7 +177,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="type-cost">Tipo de despesa</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-type-cost" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="type-cost" id="type-cost">
                                     <option selected="selected" value="0">Selecione</option>
@@ -221,7 +227,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="bank">Banco</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-bank" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="bank" id="bank">
                                     <option selected="selected" value="0">Selecione</option>
@@ -233,7 +239,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="payment">Forma de Pagamento</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-payment" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="payment" id="payment">
                                     <option selected="selected" value="0">Selecione</option>
@@ -327,6 +333,86 @@
                         </div>
     
                         <input class="input-text" type="text" placeholder="Digite a nova área de orçamento...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+            <dialog id="modal-account-name-button">
+                <h3>Adicionar denominação para a conta</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="account-name-input">Denominação da conta</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite a nova denominação...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+            <dialog id="modal-type-cost-button">
+                <h3>Adicionar tipo de despesa</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="type-cost-input">Tipo de Despesa</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite um novo tipo de despesa...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+            <dialog id="modal-bank-button">
+                <h3>Adicionar banco</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="bank-input">Banco</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite um novo banco...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+            <dialog id="modal-payment-button">
+                <h3>Adicionar banco</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="payment-input">Banco</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite um novo banco...">
                     </div>
     
                 </div>

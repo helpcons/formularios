@@ -1,3 +1,34 @@
+const modalPayment = document.getElementById("modal-payment")
+const modalPaymentButton = document.getElementById("modal-payment-button")
+
+modalPayment.onclick = function () {
+    modalPaymentButton.showModal()
+}
+
+
+const modalBank = document.getElementById("modal-bank")
+const modalBankButton = document.getElementById("modal-bank-button")
+
+modalBank.onclick = function () {
+    modalBankButton.showModal()
+}
+
+
+const modalTypeCost = document.getElementById("modal-type-cost")
+const modalTypeCostButton = document.getElementById("modal-type-cost-button")
+
+modalTypeCost.onclick = function () {
+    modalTypeCostButton.showModal()
+}
+
+
+const modalAccountName = document.getElementById("modal-account-name")
+const modalAccountNameButton = document.getElementById("modal-account-name-button")
+
+modalAccountName.onclick = function () {
+    modalAccountNameButton.showModal()
+}
+
 const modalBudgetArea = document.getElementById("modal-budget-area")
 const modalBudgetAreaButton = document.getElementById("modal-budget-area-button")
 

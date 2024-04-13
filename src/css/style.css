@@ -183,17 +183,18 @@ main {
         align-items: center;
     }
 
+    
     .title h1 {
         font-family: "Poppins";
         font-style: semibold;
         margin-bottom: 40px;
     };
-
+    
     .sub-title h2 {
         margin-bottom: 35px;
         color: #5A6ACF;
-    };
-
+    }
+    
     .title h1::after {
         content: '';
         display: block;
@@ -203,7 +204,17 @@ main {
         margin: 0 auto;
         position: absolute;
         border-radius: 10px;
-    };
+    }
+    
+    .form-menu {
+        display: flex;
+        flex-direction: row;
+        border-bottom: #6b6b6b;
+    }
+
+    .form-menu h3 {
+        margin-right: 10px;
+    }
 
     .input-box-row {
         display: flex;
