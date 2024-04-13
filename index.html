@@ -37,7 +37,7 @@
                 </li>
     
                 <li class="side-item active">
-                    <a href="#">
+                    <a href="/index.html">
                         <i class="fa-regular fa-credit-card"></i>
                         <span class="item-descrition">
                             Contas a Pagar
@@ -108,7 +108,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="company">Empresa de Origem</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a href="/company.html"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="company" id="company">
                                     <option selected="selected" value="0">Selecione</option>
@@ -120,7 +120,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="dre">DRE</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-dre" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="dre" id="dre">
                                     <option selected="selected" value="0">Selecione</option>
@@ -132,7 +132,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="cost-center">Centro de Custo</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-cost-center" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="cost-center" id="cost-center">
                                     <option selected="selected" value="0">Selecione</option>
@@ -147,7 +147,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="budget-area">Área Orçamento</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-budget-area" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="budget-area" id="budget-area">
                                     <option selected="selected" value="0">Selecione</option>
@@ -191,7 +191,7 @@
                             <div class="input-box-item">
                                 <div class="title-input">
                                     <label for="provider">Fornecedor</label>
-                                    <a href="provider.html" target="_blank"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a href="provider.html"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
                                 <select name="provider" id="provider">
                                     <option selected="selected" value="0">Selecione</option>
@@ -270,11 +270,74 @@
                         </div>
                     </div>
 
-                    <div class="salve-button">
+                    <div class="save-button">
                         <button><a href="#">Salvar</a></button>
                     </div>
                 </form>
         </div>
+
+        <div class="container-modal">
+            <dialog>
+                <h3>Adicionar categoria de DRE</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="dre-input">DRE</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite a nova categoria...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+    
+            <dialog id="modal-cost-center-button">
+                <h3>Adicionar centro de custo</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="cost-center-input">Centro de Custo</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite o novo centro de custo...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+            <dialog id="modal-budget-area-button">
+                <h3>Adicionar área de orçamento</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="budget-area-input">Área Orçamento</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite a nova área de orçamento...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="/index.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+        </div>
+
     </main>
 
     <script src="./src/javascript/script.js"></script>
