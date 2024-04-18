@@ -209,11 +209,16 @@ main {
     .form-menu {
         display: flex;
         flex-direction: row;
-        border-bottom: #6b6b6b;
+        border-bottom: 1px solid #6b6b6b;
     }
 
     .form-menu h3 {
         margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-menu h3:hover {
+        border-bottom: 3px solid #6c63ff;
     }
 
     .form-menu h3 a {
@@ -226,7 +231,7 @@ main {
         flex-direction: row;
         gap: 25px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 25px;
     
         .input-box-item {
             flex-direction: column;
@@ -357,3 +362,87 @@ dialog {
     }
 }
 
+.button-add-account {
+    width: 120px;
+}
+
+.button-add-account button {
+    width: 100%;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-add-account button:hover {
+    background-color: #4f46e5;
+}
+
+.button-add-account button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+table {
+    margin: 5px;
+}
+
+th {
+    background-color: #6b6b6b;
+}
+
+td {
+  border-bottom: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.types-group-distribution {
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(160 160 160);
+}
+
+.title-distribution {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.types-group-distribution p {
+    font-size: x-small;
+}
+
+.form-menu-pay {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-menu-pay-options{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-menu-pay h3 {
+    margin-right: 10px;
+}
+
+.form-menu-pay h3 a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+.form-menu-pay h3:hover {
+    border-bottom: 3px solid #6c63ff;
+}

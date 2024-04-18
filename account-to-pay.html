@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="https://extranet.lopesrio.com.br/assets/img/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Lopes Labs</title>
+</head>
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="https://extranet.lopesrio.com.br/assets/img/logo.svg" id="user_avatar" alt="Avatar">
+                <p id="user_infos">
+                    <span class="item-descrition">
+                        Lopes
+                    </span>
+                    <span class="item-descrition">
+                        Financeiro
+                    </span>
+                </p>
+            </div>
+            
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-descrition">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item active">
+                    <a href="index.html">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span class="item-descrition">
+                            Contas a Pagar
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                        <span class="item-descrition">
+                            Fluxo
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-box"></i>
+                        <span class="item-descrition">
+                            Cadastro
+                        </span>
+                    </a>
+                </li>
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-descrition">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+    
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-descrition">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="form">
+                <form action="#">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Contas</h1>
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-menu-pay">
+                        <div class="form-menu-pay-options">
+                            <h3><a href="#">Ordens</a></i></h3>
+                            <h3><a href="#">Pendentes</a></h3>
+                            <h3><a href="#">Arquivadas</a></h3>
+                        </div>
+
+                        <div class="button-add-account">
+                            <button><a href="index.html">Add Conta</a></button>
+                        </div>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Status</th>
+                                <th>Empresa</th>
+                                <th>DRE</th>
+                                <th>Centro de Custo</th>
+                                <th>Fornecedor</th>
+                                <th>Valor</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1900</td>
+                                <td>Pendente</td>
+                                <td>Lopes Península</td>
+                                <td>Adminstrativo</td>
+                                <td>Operações de vendas</td>
+                                <td>DELL TECHNOLOGIES</td>
+                                <td>R$ 100.000,00</td>
+                                <td>20/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>1901</td>
+                                <td>Pendente</td>
+                                <td>Lopes Leblon</td>
+                                <td>Investimento</td>
+                                <td>Operações de vendas</td>
+                                <td>DELL TECHNOLOGIES</td>
+                                <td>R$ 10.000,00</td>
+                                <td>25/03/2024</td>
+                            </tr>
+                            <tr>
+                                <td>1902</td>
+                                <td>Pendente</td>
+                                <td>Lopes CM</td>
+                                <td>Despesas Operacionais</td>
+                                <td>Operações de vendas</td>
+                                <td>DELL TECHNOLOGIES</td>
+                                <td>R$ 2.000,00</td>
+                                <td>25/03/2024</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5"></td>
+                                <td >TOTAL</td>
+                                <td>R$  122.000,00</td>
+                                <td>3 Processos</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </form>
+        
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/javascript/script.js"></script>
+</body>
+</html>
