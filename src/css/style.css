@@ -168,7 +168,7 @@ main {
 
 .container {
     width: auto;
-    height: 80vh;
+    height: 90vh;
     padding: 30px;
     display: flex;
     border-radius: 2%;
@@ -236,6 +236,10 @@ main {
         .input-box-item {
             flex-direction: column;
             width: 250px;
+        }
+
+        .input-box-item-description {
+            width: 700px;
         }
     
         label{
@@ -446,3 +450,17 @@ tfoot {
 .form-menu-pay h3:hover {
     border-bottom: 3px solid #6c63ff;
 }
+
+.descriptions-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.descriptions-group-rows {
+    width: 280px;
+}
+
+/* ==================== Account Description ==================== */
