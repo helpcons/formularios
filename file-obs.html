@@ -25,7 +25,7 @@
                     </span>
                 </p>
             </div>
-            
+    
             <ul id="side_items">
                 <li class="side-item">
                     <a href="#">
@@ -37,7 +37,7 @@
                 </li>
     
                 <li class="side-item active">
-                    <a href="./index.html">
+                    <a href="index.html">
                         <i class="fa-regular fa-credit-card"></i>
                         <span class="item-descrition">
                             Contas a Pagar
@@ -94,35 +94,11 @@
                 <form action="#">
                     <div class="form-header">
                         <div class="title">
-                            <h1>Adicionar conta</h1>
+                            <h1>Arquivos</h1>
                         </div>
 
                         <div class="sub-title">
-                            <h2>1900</h2>
-                        </div>
-                    </div>
-
-                    <div class="form-menu">
-                        <h3><a href="#">Dados</a></h3>
-                        <h3><a href="company-distribution.html">Rateio</a></h3>
-                        <h3><a href="file-obs.html">Arquivos & Observações</a></h3>
-                    </div>
-
-                    <div class="types-inputs">
-                        <div class="types-title">
-                            <h6>Tipo</h6>
-                        </div>
-    
-                        <div class="types-group">
-                            <div class="types-input">
-                                <input type="radio" id="budgeted" checked="checked">
-                                <label for="budgeted">Orçado</label>
-                            </div>
-    
-                            <div class="types-input">
-                                <input type="radio" id="realized">
-                                <label for="realized">Realizado</label>
-                            </div>
+                            <h2>CP1500</h2>
                         </div>
                     </div>
 
@@ -131,198 +107,106 @@
                         <div class="input-box-row">
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="company">Empresa de Origem</label>
-                                    <a href="company.html"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <h4>Arquivos</h4>
                                 </div>
-                                <select name="company" id="company">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Lopes Península</option>
-                                    <option value="2">Lopes Leblon</option>
-                                </select>
+                                <input type="file" name="Arquivo" id="">
                             </div>
 
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="dre">DRE</label>
-                                    <a id="modal-dre" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="dre" id="dre">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Administração de Imóveis</option>
-                                    <option value="2">Despesas Totais</option>
-                                </select>
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="cost-center">Centro de Custo</label>
-                                    <a id="modal-cost-center" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="cost-center" id="cost-center">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Administrativo</option>
-                                    <option value="2">Vendas</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="input-box-row">
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="budget-area">Área Orçamento</label>
-                                    <a id="modal-budget-area" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="budget-area" id="budget-area">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Atendimento</option>
-                                    <option value="2">Desenvolvimento</option>
-                                </select>
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="account-name">Denominação da Conta</label>
-                                    <a id="modal-account-name" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="account-name" id="account-name">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Ações de vendas</option>
-                                    <option value="2">Convenções</option>
-                                </select>
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="type-cost">Tipo de despesa</label>
-                                    <a id="modal-type-cost" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="type-cost" id="type-cost">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Fixa</option>
-                                    <option value="2">Variável</option>
-                                    <option value="3">Dedução de receita</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="input-group mt">
-
-                        <div class="input-box-row">
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="provider">Fornecedor</label>
-                                    <a href="provider.html"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="provider" id="provider">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Dell Technologies</option>
-                                    <option value="2">Papelex</option>
-                                </select>
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="money">Valor</label>
-                                </div>
-                                
-                                <input class="input-text" type="text" placeholder="R$ 0.00,00">
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="due-date">Data de Vencimento</label>
-                                </div>
-                                <input class="input-date" type="date" name="due-date">
-                            </div>
-                        </div>
-
-                        <div class="input-box-row">
-    
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="bank">Banco</label>
-                                    <a id="modal-bank" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="bank" id="bank">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Itaú</option>
-                                    <option value="2">Santander</option>
-                                </select>
-                            </div>
-    
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="payment">Forma de Pagamento</label>
-                                    <a id="modal-payment" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="payment" id="payment">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Boleto</option>
-                                    <option value="2">Cheque</option>
-                                </select>
-                            </div>
-
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="frequency">Frequência</label>
-                                    <a id="#" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="frequency" id="frequency">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Única</option>
-                                    <option value="2">Semanal</option>
-                                    <option value="3">Mensal</option>
-                                    <option value="4">Semestral</option>
-                                    <option value="5">Anual</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="input-box-row">
-    
                             <!-- <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="bank">Frequência</label>
-                                    <a id="modal-bank" href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <h4>DRE</h4>
                                 </div>
-                                <select name="bank" id="bank">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Única</option>
-                                    <option value="2">Semanal</option>
-                                    <option value="3">Mensal</option>
-                                    <option value="4">Semestral</option>
-                                    <option value="5">Anual</option>
-                                </select>
-                            </div>
-    
-                            <div class="input-box-item">
-                                <div class="title-input">
-                                    <label for="payment">Forma de Pagamento</label>
-                                    <a id="modal-payment" href="#"><i class="fa-solid fa-circle-plus"></i></a>
-                                </div>
-                                <select name="payment" id="payment">
-                                    <option selected="selected" value="0">Selecione</option>
-                                    <option value="1">Boleto</option>
-                                    <option value="2">Cheque</option>
-                                </select>
+                                <p>Despesas Totais</p>
                             </div> -->
+
+                            <!-- <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Centro de Custo</h4>
+                                </div>
+                                <p>Vendas</p>
+                            </div> -->
+
+                        </div>
+
+                        <div class="input-box-row">
+                            <!-- <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Área Orçamento</h4>
+                                </div>
+                                <p>Atendimento</p>
+                            </div>
 
                             <div class="input-box-item">
                                 <div class="title-input">
-                                    <label for="description">Descrição</label>
+                                    <h4>Denominação da Conta</h4>
                                 </div>
-                                
-                                <input class="input-text" type="text" placeholder="Digite...">
+                                <p>Ações de vendas</p>
                             </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Tipo de despesa</h4>
+                                </div>
+                                <p>Dedução de receita</p>
+                            </div> -->
+
                         </div>
+
+                        <div class="input-box-row">
+                            <!-- <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Fornecedor</h4>
+                                </div>
+                                <p>Dell Technologies</p>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Valor</h4>
+                                </div>
+                                <p>R$ 100.000,00</p>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Data de Vencimento</h4>
+                                </div>
+                                <p>25/04/2024</p>
+                            </div> -->
+
+                        </div>
+
+                        <div class="input-box-row">
+                            <!-- <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Banco</h4>
+                                </div>
+                                <p>Itaú</p>
+                            </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <h4>Forma de Pagamento</h4>
+                                </div>
+                                <p>Boleto</p>
+                            </div> -->
+
+                        </div>
+
+                        <div class="input-box-row">
+                            <div class="input-box-item-description">
+                                <div class="title-input">
+                                    <h4>Observações</h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore facilis sed quod rem eius reprehenderit aliquid ea optio laboriosam voluptatibus, eligendi obcaecati reiciendis officia. Cupiditate eum laudantium odio illo?</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="save-button">
-                        <button><a href="./account-to-pay.html">Salvar</a></button>
+                        <button><a href="account-to-pay.html">Salvar</a></button>
                     </div>
                 </form>
         </div>
@@ -471,6 +355,6 @@
 
     </main>
 
-    <script src="./src/javascript/script.js"></script>
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>

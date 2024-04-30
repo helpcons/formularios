@@ -112,10 +112,19 @@
                                 
                                 <input class="input-text" type="text" placeholder="Fornecedor">
                             </div>
+
+                            <div class="input-box-item">
+                                <div class="title-input">
+                                    <label for="provider">Tipo de Fornecedor</label>
+                                </div>
+                                
+                                <button type="button" onclick="MudarEstado('fornecedor-cpf')">Pessoa Física</button>
+                                <button type="button" onclick="MudarEstado('fornecedor-cnpj')">Pessoa Jurídica</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="input-group">
+                    <div class="input-group" id="fornecedor-cnpj">
 
                         <div class="input-box-row">
 
@@ -139,6 +148,30 @@
 
                     </div>
 
+                    <div class="input-group" id="fornecedor-cpf">
+
+                        <div class="input-box-row">
+
+                            <div class="input-box-item-provider">
+                                <div class="title-input">
+                                    <label for="provider">Nome</label>
+                                </div>
+                                
+                                <input class="input-text" type="text" placeholder="Nome do fornecedor">
+                            </div>
+
+                            <div class="input-box-item-provider-cnpj">
+                                <div class="title-input">
+                                    <label for="provider">CPF</label>
+                                </div>
+                                
+                                <input class="input-text" type="text" placeholder="000.000.000-00">
+                            </div>
+
+                        </div>
+
+                    </div>
+
                     <div class="input-group">
 
                         <div class="input-box-row">
@@ -155,7 +188,7 @@
 
                     </div>
 
-                    <div class="input-group">
+                    <div id="new-bank" class="input-group">
 
                         <div class="input-box-row">
 
@@ -163,9 +196,9 @@
 
                                 <div class="title-input">
                                     <label for="bank">Banco</label>
-                                    <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+                                    <a id="modal-bank-provider" href="#"><i class="fa-solid fa-circle-plus"></i></a>
                                 </div>
-                                <select name="payment" id="payment">
+                                <select name="bank" id="bank">
                                     <option selected="selected" value="0">Selecione</option>
                                     <option value="1">Itaú</option>
                                     <option value="2">Santander</option>
@@ -190,6 +223,8 @@
                                 
                                 <input class="input-text" type="text" placeholder="Conta">
                             </div>
+
+                            <button onclick="novoBanco()">Add</button>
 
                         </div>
 
@@ -237,8 +272,32 @@
                 </form>
             </div>
         </div>
+
+        <div class="container-modal">
+
+            <dialog id="modal-bank-provider-button">
+                <h3>Adicionar banco</h3>
+                <div class="input-box-row">
+        
+                    <div class="input-box-item">
+                        <div class="title-input">
+                            <label for="bank-input">Banco</label>
+                        </div>
+    
+                        <input class="input-text" type="text" placeholder="Digite um novo banco...">
+                    </div>
+    
+                </div>
+    
+                <div class="save-button-dialog">
+                    <button><a href="provider.html">Salvar</a></button>
+                </div>
+    
+            </dialog>
+
+        </div>
     </main>
 
-    <script src="./src/javascript/script.js"></script>
+    <script src="src/javascript/provider.js"></script>
 </body>
 </html>

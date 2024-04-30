@@ -463,4 +463,12 @@ tfoot {
     width: 280px;
 }
 
-/* ==================== Account Description ==================== */
+/* ==================== provider ==================== */
+
+#fornecedor-cnpj {
+    display: none;
+}
+
+#fornecedor-cpf {
+    display: none;
+}
